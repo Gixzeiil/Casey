@@ -1,4 +1,4 @@
-name = "final-siren"
+name = "casey"
 main = "build/worker/shim.mjs"
 compatibility_date = "2025-09-01"
 minify = true
@@ -6,59 +6,15 @@ workers_dev = false
 
 routes = [
   # Main Domain
-  { pattern = "free.nix.biz.id", custom_domain = true },
+  { pattern = "casey.alviola.biz.id", custom_domain = true },
 
   # Wildcards
-  { pattern = "api.midtrans.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "api24-normal-alisg.tiktokv.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "ava.game.naver.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "ava.line.naver.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "bakrie.ac.id.free.nix.biz.id", custom_domain = true },
-  { pattern = "cache.netflix.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "customlinks.appsflyer.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "df.game.naver.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "edu.ruangguru.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "fikom.esaunggul.ac.id.free.nix.biz.id", custom_domain = true },
-  { pattern = "game.naver.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "go.appsflyer.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "grabacademyportal.grab.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "graph.instagram.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "help.viu.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "img.email1.vidio.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "investor.fb.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "live.iflix.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "nontontv.vidio.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "quiz.int.vidio.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "quiz.staging.vidio.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "quiz.vidio.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "ruangguru.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "store.linefriends.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "support.vidio.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "support.zoom.us.free.nix.biz.id", custom_domain = true },
-  { pattern = "token-media-vidio-com.akamaized.net.free.nix.biz.id", custom_domain = true },
-  { pattern = "vuclip.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "zaintest.vuclip.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "zoom.us.free.nix.biz.id", custom_domain = true },
-
-  # TESTING Wildcard
-  { pattern = "community.udemy.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "siakad.inaba.ac.id.free.nix.biz.id", custom_domain = true },
-  { pattern = "elearning.inaba.ac.id.free.nix.biz.id", custom_domain = true },
-  { pattern = "www.quipper.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "api.quipper.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "link.quipper.com.free.nix.biz.id", custom_domain = true },
-  { pattern = "learning.polibatam.ac.id.free.nix.biz.id", custom_domain = true },
-  { pattern = "ikado.ac.id.free.nix.biz.id", custom_domain = true },
-
-  # Placeholder
-  # { pattern = ".free.nix.biz.id", custom_domain = true },
-  # { pattern = ".free.nix.biz.id", custom_domain = true },
-  # { pattern = ".free.nix.biz.id", custom_domain = true },
+  { pattern = "blog.skillacademy.com.cas.alviola.biz.id", custom_domain = true },
 ]
 
 [[kv_namespaces]]
-binding = "SIREN"
-id = "6c68f7e475004d49812776517b68f1c6"
+binding = "CASEY"
+id = "cebb4965655f43e9800b9cf94c4ca8de"
 
 [build]
 command = "cargo install -q worker-build --version 0.1.4 --force && WASMOPT=0 worker-build --release"
